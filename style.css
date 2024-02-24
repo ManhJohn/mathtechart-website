@@ -1,0 +1,708 @@
+:root {
+  --bg: rgb(31, 31, 63);
+}
+
+html {
+  scroll-behavior: smooth;
+  transition: all 1s;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  color: white;
+  overflow-x: hidden;
+}
+
+header {
+  position: fixed;
+  background-color: var(--bg);
+  height: 100px;
+  color: white;
+  left: 50px;
+  border-bottom: 5px solid white;
+  top: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+  box-shadow: 2px 2px 3px black;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+  margin-left: 50px;
+}
+
+.logo img {
+  height: 100%;
+}
+
+header .search-form {
+  display: flex;
+  align-items: center;
+}
+
+header div input {
+  border: none;
+  font-size: 15px;
+  width: 500px;
+  padding: 8px;
+  border-radius: 15px;
+  outline: none;
+  box-shadow: inset 2px 2px 5px black;
+}
+
+header div .search-icon {
+  font-size: 25px;
+  padding: 3px;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+header div .search-icon:hover {
+  background-color: blue;
+}
+
+.nav-link div a:hover, .nav-link .active {
+  color: cyan;
+}
+
+.nav-link {
+  margin-right: 150px;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.nav-link div {
+  margin-right: 25px;
+}
+
+.nav-link a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-link div img {
+  height: 30px;
+  pointer-events: none;
+}
+
+.menu-section {
+  position: fixed;
+  background-color: rgb(65, 65, 126);
+  color: white;
+  height: 100%;
+  top: 0;
+  left: -250px;
+  width: 300px;
+  border-right: 2px solid white;
+  z-index: 200;
+  box-shadow: 2px 2px 3px black;
+}
+
+.menu-section .subjects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-section .subjects div {
+  display: none;
+}
+
+.show .subjects div{
+  display: block;
+  padding: 10px;
+  width: 280px;
+  text-align: center;
+}
+
+.show .subjects .subject {
+  margin-left: -10px;
+}
+
+.show {
+  position: block;
+  left: 0;
+}
+
+.show div .subjects-show .subject:hover {
+  background-color: blue;
+}
+
+.show-theme10, .show-theme11 {
+  margin-bottom: -40px;
+}
+
+.show-theme12 {
+  margin-bottom: -30px;
+}
+
+.themes ul {
+  display: none;
+  width: 200px;
+  line-height: 1cm;
+  margin-top: -10px;
+}
+
+.themes ul li {
+  list-style-type: none;
+}
+
+.appear ul {
+  display: block;
+}
+
+.menu-section div i {
+  position: block;
+  margin-top: 30px;
+  padding: 10px;
+  font-size: 30px;
+  margin-left: 82%;
+  cursor: pointer;
+}
+
+.menu-section div i:hover {
+  background-color: blue;
+}
+
+.subject {
+  cursor: pointer;
+}
+
+.ad10, .ah10, .ad11, .ah11, .ad12, .ah12, .gt1, .gt2, .gt3, .dstt1, .dstt2 {
+  cursor: pointer;
+}
+
+.web-body {
+  background: url("images/background.jpg") no-repeat;
+  margin-left: 50px;
+  margin-top: 100px;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+.section {
+  min-height: 550px;
+}
+
+.inside {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.inside h1 {
+  font-size: 100px;
+}
+
+.home-section {
+  line-height: 0.5cm;
+}
+
+.home-section .home-image {
+  height: 400px;
+  width: 400px;
+  margin-top: 100px;
+  border: 2px solid white;
+  padding: 10px;
+  background: white;
+  border-radius: 210px;
+}
+
+.home-section .inside .home-image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 200px;
+}
+
+.about-us-section, .contact-section, .form-section, .case-study-section {
+  border-top: 5px solid gray;
+}
+
+.about-us-section .inside .about-us-image {
+  height: 400px;
+  width: 400px;
+  margin-top: 100px;
+  border: 2px solid white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.about-us-section .inside .about-us-image img {
+  height: 100%;
+  width: 100%;
+}
+
+.about-us-text {
+  margin-top: 50px;
+  text-align: left;
+  line-height: 1cm;
+} 
+
+.contact-section .inside .contact-image {
+  width: 400px;
+  height: 400px;
+  margin-top: 100px;
+  border: 2px solid white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.contact-section .inside .contact-image img {
+  height: 100%;
+  width: 100%;
+}
+
+.contact-section a span:hover {
+  color: cyan;
+}
+
+.contact-text {
+  text-align: left;
+  margin-top: 50px;
+  line-height: 1cm;
+}
+
+form {
+  width: 600px; 
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form .form-box input {
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 25px;
+  width: 300px;
+  box-shadow: inset 2px 2px 5px black;
+}
+
+form .form-box .label-div {
+  font-size: 15px;
+  padding: 10px 0;
+  border-radius: 25px;
+}
+
+.form-box {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+}
+
+#submit-input {
+  margin-top: 5px;  
+  font-size: 15px;
+  padding: 10px;
+  width: 390px;
+  cursor: pointer;
+}
+
+.google, .face { 
+  font-size: 15px;
+  padding: 10px;
+  width: 390px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.case-study {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.case-study div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.case-study button {
+  color: white;
+  background: cyan;
+  border: none;
+  outline: none;
+  padding: 10px;
+  width: 200px;
+  font-size: 15px;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  border-radius: 25px;
+  height: 50px;
+}
+
+.case-study-image {
+  width: 400px;
+  height: 400px;
+}
+
+.case-study-image img {
+  width: 100%;
+  height: 100%;
+  border: 10px solid rgb(125, 172, 204);
+  border-radius: 150px;
+}
+
+footer {
+  background-color: rgb(70, 64, 64);
+  border-top: 1px solid white;
+  height: 200px;
+  color: white;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-links {
+  margin-left: 100px;
+}
+
+footer div a span:hover {
+  color: cyan;
+}
+
+.logo-footer {
+  padding: 0;
+  max-height: 200px;
+  width: 200px;
+  height: 150px;
+}
+
+.logo-footer div {
+  width: 150px;
+  height: 150px;
+}
+
+@media (max-width: 1024px) {
+  header {
+    height: 100px;
+    border-bottom: 5px solid white;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .logo {
+    margin-left: 20px;
+  }
+  
+  header div input {
+    font-size: 15px;
+    width: 300px;
+  }
+  
+  .nav-link {
+    margin-right: 50px;
+    flex-wrap: wrap;
+  }
+  
+  .nav-link div {
+    margin-right: 20px;
+  }
+
+  .inside h1 {
+    font-size: 80px;
+  }
+  
+  .home-section {
+    line-height: 1cm;
+  }
+  
+  .home-section .home-image {
+    height: 350px;
+    width: 350px;
+    margin-top: 100px;
+    border: 1px solid white;
+    padding: 8px;
+    border-radius: 175px;
+  }
+  
+  .home-section .inside .home-image img {
+    border-radius: 175px;
+  }
+  
+  .about-us-section .inside .about-us-image {
+    height: 350px;
+    width: 350px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  
+  .about-us-text {
+    margin-top: 0;
+  } 
+  
+  .contact-section .inside .contact-image {
+    width: 350px;
+    height: 350px;
+    margin-top: 100px;
+  }
+  
+  .contact-text {
+    margin-top: 0;
+  }
+  
+  form {
+    margin-top: 100px;
+  }
+  
+  footer {
+    justify-content: space-evenly;
+  }
+  
+  .footer-links {
+    margin-left: 50px;
+  }
+  
+  .logo-footer {
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  html {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  header {
+    height: 100px;
+    left: 30px;
+    border-bottom: 1px solid white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo img {
+    display: none;
+  }
+  
+  header .search-form {
+    margin: none;
+  }
+  
+  header div input {
+    font-size: 12px;
+    width: 250px;
+  }
+  
+  header div .search-icon {
+    font-size: 15px;
+  }
+  
+  .nav-link {
+    margin-right: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .nav-link div {
+    margin-right: 15px;
+    margin-bottom: 5px;
+  }
+  
+  .nav-link div img {
+    display: none;
+  }
+  
+  .menu-section {
+    width: 200px;
+    background-color: var(--bg);
+    height: 100px;
+    left: -170px;
+    border-right: none;
+    box-shadow: none;
+    border-bottom: 1px solid white;
+  }
+  
+  .show .subjects div{
+    display: block;
+    width: 180px;
+  }
+
+  .show {
+    background-color: black;
+  }
+  
+  .themes ul {
+    display: none;
+    width: 180px;
+  }
+
+  .appear ul {
+    display: block;
+  }
+  
+  .menu-section div i {
+    margin-left: 90%;
+    padding: 0;
+    font-size: 15px;
+  }
+
+  .face-icon {
+    display: none;
+  }
+
+  .show {
+    left: 0;
+  }
+
+  .web-body {
+    margin-left: 0px;
+    margin-top: 100px;
+  }
+  
+  .inside {
+    flex-direction: column;
+  }
+  
+  .inside h1 {
+    margin-top: 50px;
+    font-size: 30px;
+  }
+  
+  .home-section .home-image {
+    height: 150px;
+    width: 150px;
+    border: 1px solid white;
+    padding: 0;
+    border-radius: 75px;
+    margin-top: 100px;
+  }
+  
+  .about-us-section, .contact-section, .form-section, .case-study-section {
+    border-top: 1px solid gray;
+  }
+  
+  .about-us-section .inside .about-us-image {
+    height: 150px;
+    width: 150px;
+    margin-top: 100px;
+    border: 2px solid white;
+    padding: 0;
+    border-radius: 5px;
+  }
+  
+  .about-us-text {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 100px;
+  } 
+  
+  .contact-section .inside .contact-image {
+    width: 150px;
+    height: 150px;
+    margin-top: 50px;
+    border: 2px solid white;
+    padding: 0;
+    border-radius: 5px;
+  }
+  
+  .contact-text {
+    text-align: center;
+    margin: 0;
+  }
+  
+  form {
+    width: 150px; 
+    margin-top: 100px;
+  }
+  
+  form .form-box input {
+    font-size: 12px;
+    padding: 10px;
+    width: 100px;
+  }
+  
+  form .form-box .label-div {
+    font-size: 12px;
+    padding: 10px 0;
+  }
+  
+  .form-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  #submit-input {
+    font-size: 12px;
+    width: 150px;
+  }
+  
+  .google, .face { 
+    font-size: 12px;
+    width: 150px;
+  }
+  
+  .case-study div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .case-study button {
+    padding: 10px;
+    width: 150px;
+    font-size: 12px;
+    border-radius: 15px;
+  }
+  
+  .case-study-image {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .case-study-image img {
+    width: 100%;
+    height: 100%;
+    border: 10px solid rgb(125, 172, 204);
+    border-radius: 75px;
+  }
+  
+  footer {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  
+  .footer-links {
+    margin: none;
+    margin-right: 50px;
+  }
+
+  .footer-links a {
+    margin-left: 4px;
+  }
+  
+  .logo-footer {
+    padding: 0;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .logo-footer div {
+    width: 50px;
+    height: 50px;
+  }
+}
