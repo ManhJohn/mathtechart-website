@@ -543,6 +543,7 @@ footer div a span:hover {
 
   .show {
     background-color: black;
+    height: 100%;
   }
   
   .themes ul {
