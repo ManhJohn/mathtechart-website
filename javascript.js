@@ -65,6 +65,11 @@ m12.addEventListener('click', () => {
   window.location.href = "giaitich12.html";
 });
 
+let m12h = document.querySelector('.show-theme12 .ah12');
+m12h.addEventListener('click', () => {
+  window.location.href = "hinhhoc12.html";
+});
+
 let gt1 = document.querySelector('.subject .gt1');
 gt1.addEventListener('click', () => {
   window.location.href = "giaitich1.html";
