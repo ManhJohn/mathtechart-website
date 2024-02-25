@@ -630,7 +630,8 @@ footer div a span:hover {
   .show {
     background-color: black;
     height: 100%;
-    transform: translateX(0px);
+    transform: translateX(170px);
+    transition: transform 1.5s;
   }
   
   .themes ul {
@@ -650,10 +651,6 @@ footer div a span:hover {
 
   .face-icon {
     display: none;
-  }
-
-  .show {
-    left: 0;
   }
 
   .web-body {
