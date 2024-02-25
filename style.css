@@ -96,6 +96,8 @@ header div .search-icon:hover {
 .nav-link div img {
   height: 30px;
   pointer-events: none;
+  border-radius: 15px;
+  border: 1px solid cyan;
 }
 
 .menu-section {
