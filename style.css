@@ -639,12 +639,16 @@ footer div a span:hover {
     background-color: black;
     height: 100%;
     transform: translateX(170px);
-    transition: transform 1.5s;
+    transition: transform 0.5s;
   }
   
   .themes ul {
     display: none;
     width: 180px;
+  }
+
+  .themes ul li {
+    margin-left: -30%;
   }
 
   .appear ul {
@@ -682,7 +686,7 @@ footer div a span:hover {
     border: 1px solid white;
     padding: 0;
     border-radius: 75px;
-    margin-top: 100px;
+    margin-top: 50px;
   }
   
   .about-us-section, .contact-section, .form-section, .case-study-section {
