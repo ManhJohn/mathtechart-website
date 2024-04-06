@@ -143,7 +143,6 @@ header div .search-icon:hover {
 .show {
   position: block;
   transform: translateX(250px);
-  transition: transform 1.5s;
 }
 
 .show div .subjects-show .subject:hover {
